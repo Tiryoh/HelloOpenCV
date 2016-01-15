@@ -7,13 +7,13 @@ CC :=g++
 CFLAGS :=-Wall `pkg-config opencv --cflags`
 LDFLAGS :=`pkg-config opencv --libs`
 SOURCES :=$(wildcard *.cpp)
-EXECUTABLE :=$(SOURCES:.cpp=)
+EXECUTABLE :=$(SOURCES:.cpp=.out)
 
 
 all:$(EXECUTABLE)
 
 $(EXECUTABLE):
-	$(CC) $@.cpp $(LDFLAGS) $(CFLAGS) -o $@.out
+	$(CC) $(@:.out=.cpp) $(LDFLAGS) $(CFLAGS) -o $@
 
 clean:
 	rm -rf $(EXECUTABLE)
