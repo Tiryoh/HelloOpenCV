@@ -7,7 +7,8 @@ This project includes the work that is distributed in the 3-clause BSD License.
 
 [opencv/LICENSE](https://github.com/Itseez/opencv/blob/master/LICENSE)
 
-#Errors?
+#Solutions
+##cascade
 `OpenCV Error: Null pointer (Invalid classifier cascade)`
 
 `error: (-27) Invalid classifier cascade`
