@@ -41,6 +41,6 @@ main (int argc, char **argv)
   cvReleaseImage (&dst_img_2);
   cvReleaseImage (&dst_img_3);
 
-  return 1;
+  return 0;
 }
 
